@@ -111,3 +111,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+# START
+
+# script specific directories
+BASH_DIR="$HOME/.bash"
+
+# flutter/dart
+source $BASH_DIR/flutter.sh
+
