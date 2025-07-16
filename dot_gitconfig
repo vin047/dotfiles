@@ -1,0 +1,29 @@
+[user]
+	name = Vinoth Ramiah
+	email = vin-git.u9w2q@simplelogin.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII+liUYzhTrTYpGZWoCusuiqQLwfmqb/Tg4bbcVg3vTM
+[alias]
+	aa = add -A
+	ci = commit -m
+	clear = !git clean -f -d && git reset --hard    # !=run as shell command, -f=force, -d=clear empty directories, --hard=revert to last commit
+	co = checkout
+	lg = log --oneline --max-count=10
+	lo = log --oneline
+	logs = log --show-signature
+	po = push -u origin
+	pom = push -u origin main
+	verify = verify-tag
+[core]
+	excludesfile = "~/.gitignore_global"
+	trustctime = false  # fixes git rebase failing on macOS
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[init]
+	defaultBranch = main
+[tag]
+	gpgSign = true
+	forceSignAnnotated = true

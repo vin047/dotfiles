@@ -1,0 +1,4 @@
+if [ $(uname -a | awk '{print $1;}') == 'Darwin' ] && [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+
