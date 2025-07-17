@@ -8,6 +8,9 @@ export PUB_CACHE=/usr/local/flutter/pub-cache
 # fvm
 export FVM_CACHE_PATH=/usr/local/flutter/fvm
 
+# android
+export ANDROID_HOME=/usr/local/android/sdk
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [ -f /Users/vin/.dart-cli-completion/bash-config.bash ] && . /Users/vin/.dart-cli-completion/bash-config.bash || true
