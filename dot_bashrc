@@ -118,6 +118,13 @@ fi
 # script specific directories
 BASH_DIR="$HOME/.bash"
 
+# OS specific script
+if [ $(uname -a | awk '{print $1;}') == 'FreeBSD' ]; then
+    source $BASH_DIR/freebsd.sh
+elif [ $(uname -a | awk '{print $1;}') == 'Darwin' ]; then
+    source $BASH_DIR/macos.sh
+fi
+
 # flutter/dart
 source $BASH_DIR/flutter.sh
 
