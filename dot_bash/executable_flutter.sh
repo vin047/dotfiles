@@ -4,6 +4,7 @@ export PATH=$FLUTTER_ROOT/bin:$PATH
 
 # dart
 export PUB_CACHE=/usr/local/flutter/pub-cache
+export PATH=$PUB_CACHE/bin:$PATH
 
 # fvm
 export FVM_CACHE_PATH=/usr/local/flutter/fvm
