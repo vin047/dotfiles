@@ -1,0 +1,11 @@
+theme = Dracula
+background-opacity = 0.9
+background-blur = true
+window-height = 42
+window-width = 150
+font-family = SF Mono Regular
+font-size = 10
+shell-integration-features = no-cursor
+cursor-style = underline
+
+macos-titlebar-style = native
