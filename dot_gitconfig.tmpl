@@ -1,7 +1,7 @@
 [user]
 	name = Vinoth Ramiah
-	email = vin-git.u9w2q@simplelogin.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII+liUYzhTrTYpGZWoCusuiqQLwfmqb/Tg4bbcVg3vTM
+	email = {{ .email | quote }}
+	signingkey = {{ .gitsigningkey | quote }}
 [alias]
 	aa = add -A
 	ci = commit -m
