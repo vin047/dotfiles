@@ -1,0 +1,33 @@
+" --- Behavior basics --------------------------------------------------------
+set autoread                    " reload files changed outside Vim
+set backspace=indent,eol,start  " make <BS> work like you expect
+
+" --- Interface --------------------------------------------------------------
+syntax on                       " coloring
+
+set nu                          " show line numbers
+set linebreak                   " wrap on words, not mid-word
+set breakindent                 " wrapped lines keep indentation
+
+set wildmenu                    " autocomplete/suggest commands
+set ruler                       " show current cursor position
+
+set laststatus=2                " always show status line
+set statusline=
+set statusline+=\ %p%%          " show percentage of file that cursor is at
+
+" --- Searching -------------------------------------------------------------
+set incsearch                   " search as you type
+set hlsearch                    " highlight search items
+set ignorecase
+
+" --- Indentation -----------------------------------------------------------
+set expandtab                   " spaces, not tabs...
+set tabstop=4                   " 4 column widths to display TAB
+set shiftwidth=4                " 4 column widths when indenting with >>/<<
+set softtabstop=0               " 4 column widths when inserting TAB key
+
+" --- Editing niceties ------------------------------------------------------
+set clipboard^=unnamed,unnamedplus  " yank/cut to system clipboard
+set mouse=a                     " scroll/select/click; hold Shift to bypass
+
